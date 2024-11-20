@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  CDropdown,
-  CDropdownDivider,
-  CDropdownItem,
-  CDropdownMenu,
-  CDropdownToggle,
-} from "@coreui/react";
-import DropDown from "./Dropdown";
+import { FaChevronDown } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -19,9 +12,11 @@ const Header = () => {
               ShopNow
             </span>
           </h5>
-          <div className=" text-secondary text-[14px] font-normal leading-[21px] ml-[231px]">
-            English
-            <DropDown />
+          <div className=" flex items-center text-secondary gap-2">
+            <h5 className=" text-secondary text-[14px] font-normal leading-[21px] ml-[231px]">
+              English{" "}
+            </h5>
+            <FaChevronDown />
           </div>
         </div>
       </div>
