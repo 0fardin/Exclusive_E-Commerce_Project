@@ -1,12 +1,22 @@
+/* eslint-disable no-undef */
 import React from "react";
 import Banner_one from "../../assets/Banner/Banner.png";
 import Banner_two from "../../assets/Banner/Bannerr.png";
-
 import { FaApple } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const ImageSlider = () => {
   const BannerImage = [{ Banner: Banner_one }, { Banner: Banner_two }];
+  const settings = {
+    dots: {},
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <>
       <div className=" w-full h-[344px] bg-black flex items-center pt-4 relative">
@@ -23,12 +33,15 @@ const ImageSlider = () => {
             <FaArrowRight />
           </button>
         </div>
-        <div className=" w-8/12 h-full pr-[278px]">
+
+        <Slider className=" w-8/12 h-[350px] pr-[278px]" {...settings}>
           {BannerImage.map((item, index) => (
             <img key={index} src={item.Banner} alt={`Banner ${index}`} />
           ))}
-        </div>
+        </Slider>
+
         <div className=" flex items-center gap-4 absolute bottom-3 left-[50%] translate-x-[-50%]">
+          {/* {settings.dots} */}
           <div className="w-3 h-3 bg-secondary/50 rounded-full"></div>
           <div className="w-3 h-3 bg-red-500 rounded-full border-2"></div>
           <div className="w-3 h-3 bg-secondary/50 rounded-full"></div>
