@@ -32,7 +32,7 @@ const Navber = () => {
               />
               <FiSearch />
             </div>
-            <BsCart3 className=" text-3xl" />
+            <BsCart3 className=" text-3xl cursor-pointer" />
           </div>
         </div>
       </div>

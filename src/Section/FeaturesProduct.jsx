@@ -1,6 +1,5 @@
 import React from "react";
-import { CartProvider } from "react-use-cart";
-import Card from "./Card";
+import Card from "./Component/Card";
 
 const FeaturesProduct = () => {
   return (

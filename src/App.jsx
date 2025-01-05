@@ -2,7 +2,8 @@ import React from "react";
 import Header from "./Section/Header";
 import Navber from "./Section/Navber";
 import Banner from "./Section/Banner";
-import FeaturesProduct from "./Section/Component/FeaturesProduct";
+import FeaturesProduct from "./Section/FeaturesProduct";
+import Categories from "./Section/Categories";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Navber />
       <Banner />
       <FeaturesProduct />
+      <Categories />
     </>
   );
 };

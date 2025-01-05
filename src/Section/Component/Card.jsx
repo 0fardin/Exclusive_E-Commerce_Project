@@ -6,7 +6,7 @@ import { IoEyeOutline } from "react-icons/io5";
 const Card = () => {
   return (
     <>
-      <div className="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white  shadow-md duration-300 hover:scale-105 hover:shadow-lg group">
+      <div className="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white  shadow-md duration-300 hover:scale-105 hover:shadow-lg group ">
         <div className="h-72 w-full px-10 py-9 bg-deepsecondary relative ">
           <div className=" w-14 h-7 bg-third rounded-md py-1 px-3 text-secondary absolute top-3 left-3">
             -40%
@@ -25,13 +25,14 @@ const Card = () => {
               <IoEyeOutline className=" text-xl text-primary" />
             </div>
           </div>
-          <div className=" w-full py-2 bg-primary text-center group-hover:visible invisible duration-300 absolute bottom-0 -left-full group-hover:bottom-0 group-hover:left-0">
+
+          <div className=" w-full py-2 bg-primary text-center absolute bottom-0 -left-full invisible group-hover:visible group-hover:bottom-0 group-hover:left-0 duration-300 overflow-hidden ">
             <h5 className="text-secondary text-[16px] leading-6">
               Add To Cart
             </h5>
           </div>
         </div>
-        <div className="pt-4 pl-1 ">
+        <div className="pt-4 pl-1">
           <h2 className="mb-4 text-lg font-medium text-primary">
             HAVIT HV-G92 Gamepad
           </h2>
