@@ -4,6 +4,7 @@ import Navber from "./Section/Navber";
 import Banner from "./Section/Banner";
 import FeaturesProduct from "./Section/FeaturesProduct";
 import Categories from "./Section/Categories";
+import Footer from "./Section/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Banner />
       <FeaturesProduct />
       <Categories />
+      <Footer />
     </>
   );
 };
