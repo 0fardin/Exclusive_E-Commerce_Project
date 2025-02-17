@@ -16,7 +16,7 @@ const Footer = () => {
                 >
                   <img src={Logo} alt="Logo" />
                 </a>
-                <div className=" w-[217px]">
+                <div className=" w-[217px] flex flex-col gap-5 mt-5">
                   <h5 className=" text-lg font-medium text-secondary">
                     Subscribe
                   </h5>
@@ -26,7 +26,7 @@ const Footer = () => {
                   <input
                     type="text"
                     placeholder="Enter your email"
-                    className="w-full border-2 border-secondary py-2 pl-5 bg-transparent"
+                    className="w-full border rounded-md border-secondary py-2 pl-5 bg-transparent"
                   />
                 </div>
               </div>
