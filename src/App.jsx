@@ -1,23 +1,22 @@
 import React from "react";
-import Header from "./Section/Header";
-import Navber from "./Section/Navber";
-import Banner from "./Section/Banner";
-import FeaturesProduct from "./Section/FeaturesProduct";
-import Categories from "./Section/Categories";
-import Footer from "./Section/Footer";
-import Footerlast from "./Section/Footerlast";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router";
+import Applayout from "./Pages/Applayout";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
 
 const App = () => {
-  return (
-    <>
-      <Header />
-      <Navber />
-      <Banner />
-      <FeaturesProduct />
-      <Categories />
-      <Footer />
-      <Footerlast />
-    </>
+  const root = document.getElementById("root");
+
+  ReactDOM.createRoot(root).render(
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Applayout />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
