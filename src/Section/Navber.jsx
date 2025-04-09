@@ -11,16 +11,16 @@ const Navber = () => {
           <img className=" w-[118px]" src={HExclusive} alt="Logo" />
           <ul className="  text-primary text-[16px] font-normal leading-[24px] flex gap-12 items-center">
             <li className=" underline underline-offset-8 decoration-primary ">
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="/contact">Contact</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="/about">About</a>
             </li>
             <li>
-              <a href="#">Sing Up</a>
+              <a href="/signup">Sign Up</a>
             </li>
           </ul>
           <div className=" flex items-center gap-6">
